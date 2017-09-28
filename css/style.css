@@ -1,0 +1,75 @@
+/*
+    CSS Challenge - ZENGARDEN
+*/
+@import url("https://fonts.googleapis.com/css?family=Give+You+Glory");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+/* line 13, H:/Web Projects/zengarden/css/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 19, H:/Web Projects/zengarden/css/style.scss */
+html,
+body {
+  color: #111;
+  font-family: 'Give You Glory', cursive;
+  font-weight: 300; }
+
+/* line 27, H:/Web Projects/zengarden/css/style.scss */
+h1 {
+  font-weight: 300;
+  font-size: 400%;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  right: 0; }
+
+/* line 36, H:/Web Projects/zengarden/css/style.scss */
+h2 {
+  font-weight: 300;
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  right: 0;
+  text-transform: uppercase; }
+
+/* line 45, H:/Web Projects/zengarden/css/style.scss */
+p {
+  line-height: 125%; }
+
+/* line 49, H:/Web Projects/zengarden/css/style.scss */
+header {
+  background-image: linear-gradient(transparent, transparent), url("https://static.pexels.com/photos/378150/pexels-photo-378150.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 40vh;
+  text-align: center; }
+
+/* line 58, H:/Web Projects/zengarden/css/style.scss */
+abbr {
+  text-decoration: none; }
+
+/* line 68, H:/Web Projects/zengarden/css/style.scss */
+* {
+  background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+  border: 4px dotted red; }
+
+/* line 73, H:/Web Projects/zengarden/css/style.scss */
+header,
+.preamble,
+.participation,
+.requirements,
+.sidebar {
+  transform: rotate(355deg); }
+
+/* line 81, H:/Web Projects/zengarden/css/style.scss */
+.summary,
+.explanation,
+.benefits,
+footer {
+  transform: rotate(5deg); }
+
+/*# sourceMappingURL=style.css.map */

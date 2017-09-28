@@ -1,0 +1,86 @@
+//////////////////////////////////////////////////////////////
+/*
+    CSS Challenge - ZENGARDEN
+*/
+//////////////////////////////////////////////////////////////
+
+$font-stack: "Lato", sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Give+You+Glory');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #111;
+    font-family: 'Give You Glory', cursive;
+//    font-family: $font-stack;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 400%;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+}
+
+h2 {
+    font-weight: 300;
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 125%;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://static.pexels.com/photos/378150/pexels-photo-378150.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 40vh;
+    text-align: center;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+* {
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    border: 4px dotted red;
+}
+
+header,
+.preamble,
+.participation,
+.requirements,
+.sidebar {
+    transform: rotate(355deg);
+}
+
+.summary,
+.explanation,
+.benefits,
+footer {
+    transform: rotate(5deg);
+}
