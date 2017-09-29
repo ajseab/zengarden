@@ -1,75 +1,85 @@
 /*
     CSS Challenge - ZENGARDEN
 */
-@import url("https://fonts.googleapis.com/css?family=Give+You+Glory");
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400");
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text");
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
-/* line 13, H:/Web Projects/zengarden/css/style.scss */
+/* line 16, H:/Web Projects/zengarden/css/style.scss */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/* line 19, H:/Web Projects/zengarden/css/style.scss */
+/* line 22, H:/Web Projects/zengarden/css/style.scss */
 html,
 body {
   color: #111;
-  font-family: 'Give You Glory', cursive;
+  font-family: "Crimson Text", serif;
   font-weight: 300; }
 
-/* line 27, H:/Web Projects/zengarden/css/style.scss */
+/* line 29, H:/Web Projects/zengarden/css/style.scss */
 h1 {
+  font-family: "Julius Sans One", sans-serif;
   font-weight: 300;
   font-size: 400%;
   position: absolute;
   top: 10vh;
   left: 0;
   right: 0; }
+  /* line 37, H:/Web Projects/zengarden/css/style.scss */
+  h1:after {
+    content: "";
+    display: block;
+    width: 50px;
+    background-color: #e1e1e1;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 10px; }
 
-/* line 36, H:/Web Projects/zengarden/css/style.scss */
+/* line 48, H:/Web Projects/zengarden/css/style.scss */
 h2 {
   font-weight: 300;
   position: absolute;
-  top: 20vh;
+  top: 22vh;
   left: 0;
   right: 0;
   text-transform: uppercase; }
 
-/* line 45, H:/Web Projects/zengarden/css/style.scss */
-p {
-  line-height: 125%; }
+/* line 57, H:/Web Projects/zengarden/css/style.scss */
+h3 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 150%; }
 
-/* line 49, H:/Web Projects/zengarden/css/style.scss */
+/* line 62, H:/Web Projects/zengarden/css/style.scss */
+p {
+  line-height: 140%;
+  font-size: 17px; }
+
+/* line 67, H:/Web Projects/zengarden/css/style.scss */
 header {
-  background-image: linear-gradient(transparent, transparent), url("https://static.pexels.com/photos/378150/pexels-photo-378150.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("https://static.pexels.com/photos/378150/pexels-photo-378150.jpeg");
   background-size: cover;
   background-position: center;
   color: #fff;
-  height: 40vh;
+  height: 100vh;
   text-align: center; }
 
-/* line 58, H:/Web Projects/zengarden/css/style.scss */
+/* line 76, H:/Web Projects/zengarden/css/style.scss */
 abbr {
   text-decoration: none; }
 
-/* line 68, H:/Web Projects/zengarden/css/style.scss */
-* {
-  background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
-  border: 4px dotted red; }
-
-/* line 73, H:/Web Projects/zengarden/css/style.scss */
-header,
-.preamble,
-.participation,
-.requirements,
-.sidebar {
-  transform: rotate(355deg); }
-
-/* line 81, H:/Web Projects/zengarden/css/style.scss */
-.summary,
-.explanation,
-.benefits,
-footer {
-  transform: rotate(5deg); }
+/* line 80, H:/Web Projects/zengarden/css/style.scss */
+.summary {
+  position: absolute;
+  top: 60vh;
+  left: 0;
+  right: 0; }
+  /* line 85, H:/Web Projects/zengarden/css/style.scss */
+  .summary p {
+    border-left: 2px dotted #999;
+    padding-left: 20px;
+    line-height: 155%;
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
