@@ -4,17 +4,13 @@
 */
 //////////////////////////////////////////////////////////////
 
-$font-stack: "Lato", sans-serif;
+$font-lato: "Lato", sans-serif;
 $font-crimson: "Crimson Text", serif;
-$header-background-img: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../img/sea-min.jpeg");
+$header-background-img: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../img/sea-min.jpeg");
 $primary-color: #c0b283;
-$primary-color-dark: #665a34;
+$primary-color-dark: #5a502e;
 $primary-color-light: #e2dcc7;
 $primary-color-transparent: rgba(192,178,131, 0.6);
-
-// $primary-color: #83eed9;
-// $primary-color-dark: #0c5547;
-// $primary-color-light: #bff6eb;
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700');
@@ -28,7 +24,7 @@ $primary-color-transparent: rgba(192,178,131, 0.6);
 html,
 body {
     color: #111;
-    font-family: $font-stack;
+    font-family: $font-lato;
     font-weight: 300;
 }
 
@@ -37,7 +33,7 @@ h1 {
     color: $primary-color-light;
     font-family: $font-crimson;
     font-weight: 700;
-    position: absolute;
+    position: fixed;
     top: 15px;
     left: 15px;
     border: 1px solid $primary-color-light;
@@ -50,21 +46,24 @@ h2 {
     color: $primary-color-light;
     font-weight: 300;
     font-family: $font-crimson;
-    position: absolute;
+    position: fixed;
     letter-spacing: 7px;
     top: 31px;
     left: 0;
     right: 0;
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.89);
     padding-top: 31px;
     margin-top: -31px;
     padding-bottom: 31px;
+    z-index: 2;
 }
 
 h3 {
     font-family: $font-crimson;
     font-size: 150%;
+    color: $primary-color-dark;
+    margin-bottom: 15px;
 }
 
 p {
@@ -72,7 +71,12 @@ p {
     font-size: 17px;
 }
 
+abbr {
+    text-decoration: none;
+}
+
 header {
+    background-attachment: fixed;
     background-image: $header-background-img;
     background-size: cover;
     background-position: center;
@@ -86,17 +90,13 @@ header {
     }
 }
 
-abbr {
-    text-decoration: none;
-}
-
 .summary {
-    position: absolute;
-    top: 27vh;
-    left: 50%;
-    margin-left: -485px;
-    width: 970px;
     p:first-child {
+        position: absolute;
+        top: 35vh;
+        left: 50%;          
+        margin-left: -485px;
+        width: 970px;
         font-size: 300%;
         border-left: 2px dotted $primary-color-light;
         padding-left: 20px;
@@ -104,27 +104,75 @@ abbr {
         color: #fff;
     }
     p:last-child {
-        padding: 25px;
-        margin-left: 200px;
-        margin-right: 200px;
-        border-radius: 15px;
-        margin-top: 85px;
-        color: #fff;
-        text-align: center;
+        font-family: $font-crimson;
+        font-size: 90%;
+        position: fixed;
+        top: 33px;
+        right: 15px;
+        color: $primary-color-light;
+        z-index: 3;
         a {
             font-weight: 400;
             text-transform: uppercase;
             padding: 10px;
-            margin: 0 12px 0 12px;
-            color: $primary-color;
+            margin: 0 10px 0 10px;
+            color: $primary-color-light;
             text-decoration: none;
-            border: 1px solid $primary-color;
+            border: 1px solid $primary-color-light;
             transition: background-color 0.2s, color 0.2s;
             &:hover {
-                background-color: $primary-color-transparent;
-                color: #fff;
-                border: 1px solid $primary-color-transparent;
+                background-color: $primary-color-light;
+                color: #000;
             }
         }
     }
 }
+
+.preamble {
+    margin-top: 70px;
+}
+
+.main > div,
+.preamble {
+    margin-top: 70px;
+    width: 70%;
+    padding: 0 7vw;
+    float: left;
+    &::after {
+        margin: 70px auto 0 auto;
+        height: 1px;
+        display: block;
+        width: 90%;
+        background: #ddd;
+        content: "";
+    }
+    h3 ~ p {
+        margin-bottom: 15px;
+    }
+    a {
+        color: $primary-color;
+        text-decoration: none;
+        border-bottom: 1px solid $primary-color;
+        transition: border-bottom 0.3s, color 0.3s;
+        &:hover {
+            color: $primary-color-dark;
+            border-bottom: 1px solid $primary-color-dark;
+        }
+    }
+    abbr {
+        border-bottom: 1px dotted $primary-color;
+        transition: color 0.3s;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+// footer {
+//     display: block;
+//     width: 100%;
+//     text-align: center;
+//     a {
+//         padding: 50px;
+//     }
+// }
