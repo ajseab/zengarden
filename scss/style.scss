@@ -1,0 +1,130 @@
+//////////////////////////////////////////////////////////////
+/*
+    CSS Challenge - ZENGARDEN
+*/
+//////////////////////////////////////////////////////////////
+
+$font-stack: "Lato", sans-serif;
+$font-crimson: "Crimson Text", serif;
+$header-background-img: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../img/sea-min.jpeg");
+$primary-color: #c0b283;
+$primary-color-dark: #665a34;
+$primary-color-light: #e2dcc7;
+$primary-color-transparent: rgba(192,178,131, 0.6);
+
+// $primary-color: #83eed9;
+// $primary-color-dark: #0c5547;
+// $primary-color-light: #bff6eb;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #111;
+    font-family: $font-stack;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 18px;
+    color: $primary-color-light;
+    font-family: $font-crimson;
+    font-weight: 700;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: 1px solid $primary-color-light;
+    padding: 20px 15px 15px 15px;
+    z-index: 9;
+}
+
+h2 {
+    font-size: 18px;
+    color: $primary-color-light;
+    font-weight: 300;
+    font-family: $font-crimson;
+    position: absolute;
+    letter-spacing: 7px;
+    top: 31px;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 31px;
+    margin-top: -31px;
+    padding-bottom: 31px;
+}
+
+h3 {
+    font-family: $font-crimson;
+    font-size: 150%;
+}
+
+p {
+    line-height: 140%;
+    font-size: 17px;
+}
+
+header {
+    background-image: $header-background-img;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+    &:after {
+        height: 100px;
+        width: 100%;
+        background-color: #000;
+    }
+}
+
+abbr {
+    text-decoration: none;
+}
+
+.summary {
+    position: absolute;
+    top: 27vh;
+    left: 50%;
+    margin-left: -485px;
+    width: 970px;
+    p:first-child {
+        font-size: 300%;
+        border-left: 2px dotted $primary-color-light;
+        padding-left: 20px;
+        line-height: 155%;
+        color: #fff;
+    }
+    p:last-child {
+        padding: 25px;
+        margin-left: 200px;
+        margin-right: 200px;
+        border-radius: 15px;
+        margin-top: 85px;
+        color: #fff;
+        text-align: center;
+        a {
+            font-weight: 400;
+            text-transform: uppercase;
+            padding: 10px;
+            margin: 0 12px 0 12px;
+            color: $primary-color;
+            text-decoration: none;
+            border: 1px solid $primary-color;
+            transition: background-color 0.2s, color 0.2s;
+            &:hover {
+                background-color: $primary-color-transparent;
+                color: #fff;
+                border: 1px solid $primary-color-transparent;
+            }
+        }
+    }
+}
