@@ -2,15 +2,21 @@
 /*
     CSS Challenge - ZENGARDEN
 */
-//////////////////////////////////////////////////////////////
 
-$font-lato: "Lato", sans-serif;
-$font-crimson: "Crimson Text", serif;
-$header-background-img: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../img/sea-min.jpeg");
+//////////////////////////////////////////////////////////////
+$font-lato: "Lato",
+sans-serif;
+$font-crimson: "Crimson Text",
+serif;
+$header-background-img: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+url("../img/sea-min.jpeg");
 $primary-color: #c0b283;
 $primary-color-dark: #5a502e;
 $primary-color-light: #e2dcc7;
-$primary-color-transparent: rgba(192,178,131, 0.6);
+$primary-color-transparent: rgba(192,
+178,
+131,
+0.6);
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700');
@@ -52,7 +58,7 @@ h2 {
     left: 0;
     right: 0;
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: rgba(0, 0, 0, 0.8);
     padding-top: 31px;
     margin-top: -31px;
     padding-bottom: 31px;
@@ -94,7 +100,7 @@ header {
     p:first-child {
         position: absolute;
         top: 35vh;
-        left: 50%;          
+        left: 50%;
         margin-left: -485px;
         width: 970px;
         font-size: 300%;
@@ -134,10 +140,9 @@ header {
 
 .main > div,
 .preamble {
-    margin-top: 70px;
     width: 70%;
-    padding: 0 7vw;
-    float: left;
+    padding: 0 5vw;
+    margin: 70px auto 0 auto;
     &::after {
         margin: 70px auto 0 auto;
         height: 1px;
@@ -168,11 +173,71 @@ header {
     }
 }
 
-// footer {
-//     display: block;
-//     width: 100%;
-//     text-align: center;
-//     a {
-//         padding: 50px;
-//     }
-// }
+.requirements {
+    &::after {
+        height: 0 !important;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    height: 200px;
+    margin-top: 200px;
+    a {
+        position: relative;
+        top: 86px;
+        font-size: 120%;
+        padding: 25px;
+        margin-right: 100px;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover,
+        &:active {
+            background-color: $primary-color;
+            color: #111;
+        }
+    }
+}
+
+.sidebar {
+    background-color: #444;
+    text-align: center;
+    padding: 150px 0;
+    h3 {
+        font-family: $font-lato;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #fff;
+        &::after {
+            margin: 15px auto 0 auto;
+            height: 1px;
+            display: block;
+            width: 12px;
+            background: $primary-color-light;
+            content: "";
+        }
+    }
+    li {
+        margin-bottom: 10px;
+        color: #fff;
+        a {
+            color: $primary-color-light;
+            text-decoration: none;
+            border-bottom: 1px solid $primary-color-light;
+        }
+    }
+    .wrapper {
+        & > div {
+            margin-bottom: 60px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
